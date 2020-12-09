@@ -251,3 +251,36 @@ h6 { font-size: 16px;}
     right: -5px;
 }
 
+.about-wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30em;
+    grid-template-areas:
+    'about-me skills';
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    gap:100px;
+}
+
+.about-me{
+grid-area: about-me;
+
+}
+.tech{
+    display: flex;
+    justify-content: space-around;
+}
+.skills{
+    background-color: var(--previewShadow);
+    grid-area: skills;
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
