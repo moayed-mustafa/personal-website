@@ -11,6 +11,8 @@
      --previewBg:rgb(251, 249,243, 0.8);
      --previewShadow: #f0ead6;
      --btnColor: #000000;
+     --linkColor:#17a2b8;
+     --aboutBg:#78866b;
 }
 
 html, body{
@@ -30,7 +32,7 @@ p, li, span, label, input, textarea{
 }
 a{
     text-decoration:none;
-    color: #17a2b8
+    color:var(--linkColor)
 }
 ul{
     list-style: none
@@ -171,7 +173,54 @@ h6 { font-size: 16px;}
 .theme-dot:hover{
     border-width: 5px;
 }
-#light-mode{
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 15px;
+	width: 35px;
+	transform: scale(1.5);
+}
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+    color: #f1c40f;
+    /* width: 50%;
+    height: 50%; */
+}
+
+.fa-sun {
+    color: #f39c12;
+    /* width: 50%;
+    height: 50%; */
+}
+
+/* #light-mode{
     background-color: #fff
 }
 #blue-mode{
@@ -187,7 +236,7 @@ h6 { font-size: 16px;}
     font-size:12px;
     font-style: italic;
     text-align:center;
-}
+} */
 .right-column{
     grid-area:right-column;
     padding-top: 50px;
@@ -279,7 +328,7 @@ h6 { font-size: 16px;}
 
 .about-me{
 grid-area: about-me;
-background-color: #78866b;
+background-color: var(--aboutBg);
 padding:50px;
 box-shadow: 6px 7px 4px 8px var(--previewShadow)
 
@@ -296,7 +345,7 @@ box-shadow: 6px 7px 4px 8px var(--previewShadow)
     background-color: var(--previewShadow);
     grid-area: skills;
     padding:50px;
-    box-shadow: 6px 7px 4px 8px #78866b;
+    box-shadow: 6px 7px 4px 8px var(--aboutBg);
 
     /* padding-bottom: 50px; */
 }
@@ -306,7 +355,7 @@ box-shadow: 6px 7px 4px 8px var(--previewShadow)
     align-items:space-between;
     position: relative;
     width:100px;
-    box-shadow: 6px 3px 4px 4px #78866b;
+    box-shadow: 6px 3px 4px 4px var(--aboutBg);
     /* box-shadow: -6px 7px 14px 8px#78866b; */
     padding:20px;
 }

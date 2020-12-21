@@ -4,18 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moayed's website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
+ rel="stylesheet">
     <link rel="stylesheet" href="default.css">
+    <link id="theme-style" rel="stylesheet" href="">
 </head>
 <body>
     <section class="s1">
         <div class="main-container">
             <div class = 'greeting-wrapper'>
-                <h1>Hi, I'm Moayed</h1>
+                <h1>Hi, I'm Moayed
+
+                    <audio controls>
+                        <figcaption>How it's Pronunced</figcaption>
+                        <source src="pronunciation.m4a" type="audio/x-m4a">
+
+                    </audio>
+                </h1>
+
+
+
             </div>
             <div class = 'intro-wrapper'>
                 <div class="nav-wrapper">
@@ -26,21 +41,22 @@
                     </div>
 
                     <ul id='navigation'>
-                       <li> <a href="#">One</a> </li>
-                       <li> <a href="#">Two</a> </li>
+                       <li> <a href="https://www.linkedin.com/in/moayed-mustafa" target="_blank">LinkedIn</a> </li>
+                       <li> <a href="https://github.com/moayed-mustafa" target="_blank">GitHub</a> </li>
                     </ul>
                 </div>
 
                 <div class="left-column">
                     <img id="profile-pic" src="images/place-holder.jpg">
-                    <h5 style= "text-align: center; line-height:0">Personalize Theme</h5>
+                    <h5 style= "text-align: center; line-height:0">Change Theme</h5>
                     <div id='theme-options-wrapper'>
-                        <div class="theme-dot" id="light-mode"></div>
-                        <div class="theme-dot" id="green-mode"></div>
-                        <div class="theme-dot" id="purple-mode"></div>
-                        <div class="theme-dot" id="blue-mode"></div>
+                        <input type="checkbox" class="checkbox" id="chk"  />
+                        <label class="label" for="chk">
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                            <div class="ball"></div>
+                        </label>
                     </div>
-                    <p id="setting-note">*Theme settings will be saved for <br>your next visit</p>
                 </div>
                 <div class="right-column">
                     <div id="preview-shadow">
@@ -48,7 +64,10 @@
                             <div class="corner" id="corner-tl"></div>
                             <div class="corner" id="corner-tr"></div>
                             <h3>What I do</h3>
-                            <p>Here is where I introduce myself</p>
+                            <p>I'm a full stack web developer
+                                with experience in server side screpting in Python Flask and Node js
+                                and coding user interface components in Vanilla Javascript and React JS
+                            </p>
                             <div class="corner" id="corner-bl"></div>
                             <div class="corner" id="corner-br"></div>
                         </div>
@@ -63,9 +82,10 @@
         <div class="main-container">
            <div class="about-wrapper">
                <div class="about-me">
-                    <h4>More info about me</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et dolorem id nemo, illum assumenda quas nesciunt. Accusamus cumque maxime, pariatur commodi in neque odio perspiciatis ut eligendi placeat velit eos.</p>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eveniet corrupti libero adipisci? Repudiandae tempore nam totam rem quia perspiciatis iste quasi assumenda a, voluptates optio dolorum iure odio corporis?</p>
+                    <h4>More information about me</h4>
+                    <p>I have a background in Customer relationship, working with customers directly for the last three years developed my communication skills and bargining abilities, However, with a desire for more
+                        challenging technical work, I made a decision to switch to Software Engineering, going through <a href="https://www.springboard.com/" target="_blank">Springboard</a> code school, I have finally emerged with the technical skills I wanted and feeling comfortable about putting them to use in the real world.
+                      </p>
                </div>
                <hr>
 
@@ -114,11 +134,44 @@
 
 
                 <div class="post">
-                    <img class="thumbnail" src="images/place-holder.jpg" alt="">
+                    <img class="thumbnail" src="images/homepage copy.png" alt="">
                     <div class="post-preview">
-                        <h6 class="post-title">Header</h6>
-                        <p class ="post-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex esse quisquam blanditiis odit, accusantium exercitationem es</p>
-                        <a href="#" target="_blank">project link</a>
+                        <h6 class="post-title">Word Search App</h6>
+                        <p class ="post-intro">Word search app is an electroic English dictionary to help non-English speakers build their vocabulary</p>
+                        <a href="https://moayed-word-search.herokuapp.com/" target="_blank">Word-Search</a>
+
+                    </div >
+                </div>
+            </div>
+            <div>
+                <div class="post">
+                    <img class="thumbnail"  src="images/shopper.png" alt="">
+                    <div class="post-preview">
+                        <h6 class="post-title">Shopper</h6>
+                        <p class ="post-intro">Shopper is an E-commerce full stack app that helps users shop online with ease and comfort</p>
+                        <a href="https://shopper-fe.herokuapp.com/" target="_blank">Shopper</a>
+
+                    </div >
+                </div>
+            </div>
+            <div>
+                <div class="post">
+                    <img class="thumbnail"  src="images/connect-four.png" alt="">
+                    <div class="post-preview">
+                        <h6 class="post-title">Connect Four</h6>
+                        <p class ="post-intro">Fun interactive connect four dots game built in vanilla Javascript</p>
+                        <a href="https://moayed-mustafa.github.io/connect-four/" target="_blank">Connect Four</a>
+
+                    </div >
+                </div>
+            </div>
+            <div>
+                <div class="post">
+                    <img class="thumbnail"  src="images/memory-game.png" alt="">
+                    <div class="post-preview">
+                        <h6 class="post-title">Memory game</h6>
+                        <p class ="post-intro">If you like cute puppies and you want to test your memories, my cute pupies memory game brings the best of both worlds, try it out </p>
+                        <a href="#" target="_blank">memory game</a>
 
                     </div >
                 </div>
@@ -128,19 +181,8 @@
                     <img class="thumbnail"  src="images/place-holder.jpg" alt="">
                     <div class="post-preview">
                         <h6 class="post-title">Header</h6>
-                        <p class ="post-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex esse quisquam blanditiis odit, accusantium exercitationem est quidem, fugiat, deleniti repudiandae in debitis? Quae, hic facilis. Veniam dolore minus error.</p>
-                        <a href="#" target="_blank">project link</a>
-
-                    </div >
-                </div>
-            </div>
-            <div>
-                <div class="post">
-                    <img class="thumbnail"  src="images/place-holder.jpg" alt="">
-                    <div class="post-preview">
-                        <h6 class="post-title">Header</h6>
-                        <p class ="post-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex esse quisquam blanditiis odit, accusantium exercitationem est quidem, fugiat, deleniti repudiandae in debitis? Quae, hic facilis. Veniam dolore minus error.</p>
-                        <a href="#" target="_blank">project link</a>
+                        <p class ="post-intro">Fun interactive connect four dots game built in vanilla Javascriptsse quisquam blanditiis odit, accusantium exercitationem est quidem, fugiat, deleniti repudiandae in debitis? Quae, hic facilis. Veniam dolore minus error.</p>
+                        <a href="https://moayed-mustafa.github.io/memory-game/" target="_blank">project link</a>
 
                     </div >
                 </div>
@@ -175,4 +217,7 @@
     </section>
 
 </body>
+<script src="index.js"></script>
+
 </html>
+
