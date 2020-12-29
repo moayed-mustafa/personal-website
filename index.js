@@ -1,24 +1,36 @@
 
-let theme = 'light'
+const alert = document.querySelector('.popup')
+const form = document.getElementById('contact-form');
+let name  = document.querySelector('#name');
+let subject  = document.querySelector('#subject');
+let email  = document.querySelector('#email');
+let message = document.querySelector('#message');
 
-function setTheme(theme){
-    if (theme =='light') {
-        document.getElementById('theme-style').href = 'default.css';
-    } else {
-        document.getElementById('theme-style').href = 'theme.css';
 
-    }
+// hide alert
+alert.style.display= 'none'
+form.addEventListener("submit", function (e) {
+    console.log('submit')
+    e.preventDefault();
+    clearForm();
+    // show alert
+    alert.style.display = 'inline'
 
-}
-const checkBox = document.getElementById('chk');
-checkBox.addEventListener('change', function () {
-    if (theme === 'light') {
-        theme = 'dark';
-    }
-    else if (theme === 'dark') {
-        theme = 'light'
-    }
-    setTheme(theme);
+    setTimeout(function () {
+        alert.style.display= 'none'
+
+    }, 3000)
+    // alert.classList.add('show')
+    // setTimeout(function () {
+    //     alert.classList.remove('show')
+
+    //     }, 3000)
 
 })
 
+function clearForm() {
+    name.value = "";
+    subject.value = "";
+    email.value = "";
+    message.value=""
+}

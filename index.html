@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moayed's website</title>
+    <link rel="icon" href="images/programmer.png" type="image/png">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -137,7 +139,7 @@ rel="stylesheet">
                     <img class="thumbnail" src="images/homepage copy.png" alt="">
                     <div class="post-preview">
                         <h6 class="post-title">Word Search App</h6>
-                        <p class ="post-intro">Word search app is an electroic English dictionary to help non-English speakers build their vocabulary</p>
+                        <p class ="post-intro">Word search app is an electroic English dictionary to help non-English speakers build their vocabulary.</p>
                         <a href="https://moayed-word-search.herokuapp.com/" target="_blank">Word-Search</a>
 
                     </div >
@@ -148,7 +150,7 @@ rel="stylesheet">
                     <img class="thumbnail"  src="images/shopper.png" alt="">
                     <div class="post-preview">
                         <h6 class="post-title">Shopper</h6>
-                        <p class ="post-intro">Shopper is an E-commerce full stack app that helps users shop online with ease and comfort</p>
+                        <p class ="post-intro">Shopper is an E-commerce full stack app that helps users shop online with ease and comfort.</p>
                         <a href="https://shopper-fe.herokuapp.com/" target="_blank">Shopper</a>
 
                     </div >
@@ -167,10 +169,31 @@ rel="stylesheet">
             </div>
             <div>
                 <div class="post">
+                    <img class="thumbnail"  src="images/feedback.png" alt="">
+                    <div class="post-preview">
+                        <h6 class="post-title">User Feedbacks</h6>
+                        <p class ="post-intro">This is a full stack app allows users to sign up and post feedback and opinions on whatever they find worthy.</p>
+                        <a href="https://moe-feedbacks-app.herokuapp.com/" target="_blank">Feedback</a>
+                    </div >
+                </div>
+            </div>
+            <div>
+                <div class="post">
+                    <img class="thumbnail"  src="images/hackersnooze.png" alt="">
+                    <div class="post-preview">
+                        <h6 class="post-title">Hacker Snooze</h6>
+                        <p class ="post-intro">A clone of hacker news website.</p>
+                        <a href="https://moayed-mustafa.github.io/Hack-or-Snooze/" target="_blank">HackerSnooze </a>
+
+                    </div >
+                </div>
+            </div>
+            <div>
+                <div class="post">
                     <img class="thumbnail"  src="images/connect-four.png" alt="">
                     <div class="post-preview">
                         <h6 class="post-title">Connect Four</h6>
-                        <p class ="post-intro">Fun interactive connect four dots game built in vanilla Javascript</p>
+                        <p class ="post-intro">Fun interactive connect four dots game built in vanilla Javascript.</p>
                         <a href="https://moayed-mustafa.github.io/connect-four/" target="_blank">Connect Four</a>
 
                     </div >
@@ -182,34 +205,24 @@ rel="stylesheet">
                     <img class="thumbnail"  src="images/memory-game.png" alt="">
                     <div class="post-preview">
                         <h6 class="post-title">Memory game</h6>
-                        <p class ="post-intro">If you like cute puppies and you want to test your memories, my cute pupies memory game brings the best of both worlds, try it out </p>
-                        <a href="#" target="_blank">memory game</a>
+                        <p class ="post-intro">If you like cute puppies and you want to test your memory, my cute pupies memory game brings the best of both worlds, try it out.</p>
+                        <a href="https://moayed-mustafa.github.io/memory-game/" target="_blank">Memory game</a>
 
                     </div >
                 </div>
             </div>
             <div>
                 <div class="post">
-                    <img class="thumbnail"  src="images/feedback.png" alt="">
+                    <img class="thumbnail"  src="images/hangman.png" alt="">
                     <div class="post-preview">
-                        <h6 class="post-title">User Feedbacks</h6>
-                        <p class ="post-intro">This app allows users to sign up and post feedback and opinions on whatever they find worthy</p>
-                        <a href="https://moe-feedbacks-app.herokuapp.com/" target="_blank">Feedback</a>
-
+                        <h6 class="post-title">Hangman</h6>
+                        <p class ="post-intro">Hangman is a word guessing game, guess the correct word or hangman will show up in your life</p>
+                        <a href="https://moayed-mustafa.github.io/hangman/" target="_blank">Hangman</a>
                     </div >
                 </div>
             </div>
-            <div>
-                <div class="post">
-                    <img class="thumbnail"  src="images/hackersnooze.png" alt="">
-                    <div class="post-preview">
-                        <h6 class="post-title">Hacker Snooze</h6>
-                        <p class ="post-intro">A clone of hacker news website.</p>
-                        <a href="https://moayed-mustafa.github.io/Hack-or-Snooze/" target="_blank">HackerSnooze/a>
 
-                    </div >
-                </div>
-            </div>
+
 
             </div>
         </div>
@@ -219,27 +232,44 @@ rel="stylesheet">
             <a href=""></a>
 			<h3 style="text-align: center;">Get In Touch</h3>
 
-			<form id="contact-form">
+            <form
+            id="contact-form"
+             method="post" action="https://formspree.io/f/meqppgzo">
 				<a name="contact"></a>
 
 				<label>Name:</label>
-				<input class="input-field" type="text" name="name">
+				<input class="input-field" id="name" type="text" name="name">
 
 				<label>Subject:</label>
-				<input class="input-field" type="text" name="subject">
+				<input class="input-field" id="subject" type="text" name="subject">
 
 				<label>Email:</label>
-				<input class="input-field" type="text" name="email">
+				<input class="input-field" id="email" type="text" name="email">
 
 				<label>Message:</label>
-				<textarea class="input-field" name="message"></textarea>
+				<textarea class="input-field" id="message" name="message"></textarea>
 
-				<input id="submit-btn" type="submit" value="Send">
-			</form>
+                <input id="submit-btn" type="submit" value="Send">
+
+                <div class="popup">
+                 <p>Your Email Was Sent Successfully</p>
+                </div>
+            </form>
+
         </div>
+
+
+        <!-- <div class="popup">
+            <p>Your Email Was Sent Successfully</p>
+        </div> -->
     </section>
+    <!-- <div class="popup" style="display:block">
+            <p>Your Email Was Sent Successfully</p>
+        </div> -->
+
 
 </body>
+<script src="theme.js"></script>
 <script src="index.js"></script>
 
 </html>

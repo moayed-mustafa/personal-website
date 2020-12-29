@@ -13,6 +13,7 @@
      --btnColor: #000000;
      --linkColor:#17a2b8;
      --aboutBg:#78866b;
+     --alertPrimary:#eaeaea;
 }
 
 html, body{
@@ -220,23 +221,7 @@ h6 { font-size: 16px;}
     height: 50%; */
 }
 
-/* #light-mode{
-    background-color: #fff
-}
-#blue-mode{
-    background-color: #192734
-}
-#green-mode{
-    background-color: #78866b
-}
-#purple-mode{
-    background-color: #7e4c74
-}
-#setting-note{
-    font-size:12px;
-    font-style: italic;
-    text-align:center;
-} */
+
 .right-column{
     grid-area:right-column;
     padding-top: 50px;
@@ -315,13 +300,12 @@ h6 { font-size: 16px;}
     gap:100px;
 }
 
-@media screen and(max-width:320px){
+@media screen and(max-width:300px){
     .about-wrapper{
         grid-template-columns: 1fr ;
         grid-template-rows: 5em;
         grid-template-areas:
     'about-me'
-    'skills'
     ;
     }
 }
@@ -423,6 +407,47 @@ box-shadow: 6px 7px 4px 8px var(--previewShadow)
     border: 1px solid var(--borderColor);
     font-size: 14px
 }
+.popup{
+    /* position: absolute; */
+    /* background: var(--alertPrimary); */
+    color: var(--mainText);
+    padding:15px 20px;
+    border-radius: 10px 10px 0 0;
+    /* bottom: -50px; */
+    margin-top:20px;
+    transition: 0.4s ease-in-out;
+    width:100%;
+
+}
+.popup p{
+    margin: 20px;
+}
+.popup.show{
+    transform: translateY(-50px);
+
+}
+
+
+
+
+    /* border: solid 1px black;
+    font-weight: bold;
+    padding:10px;
+    margin-bottom:30px; */
+    /* margin-top:50px; */
+    /* margin:  0 auto;
+    text-align: center;
+    background: var(--alertPrimary);
+    color: var(--mainText);
+    text-align: center;
+    transition: all 4s;
+    overflow: hidden;
+    box-sizing: border-box; */
+    /* This is some new stuff */
+    /* position: absolute;
+    bottom: -50px; */
+/* } */
+
 
 
 
